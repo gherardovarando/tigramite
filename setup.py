@@ -87,6 +87,12 @@ setup(
         ":: OSI Approved "
         ":: GNU General Public License v3 or later (GPLv3+)",
         "Programming Language :: Python",
-    ],
-)
+        ],
+    entry_points={
+        'causeme.methods': [
+            'pcmci=tigramite.pcmci_f:pcmci',
+            ]
+        },
+
+    )
 
